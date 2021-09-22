@@ -96,6 +96,72 @@ time {
   font-size: 1.2rem;
 }
 
+.arrow {
+  background: var(--Light-Grayish-Blue);
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  margin-top: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.share {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background: var(--Very-Dark-Grayish-Blue);
+  left: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  padding: 0 3.2rem;
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.arrow:hover {
+  background: var(--Grayish-Blue);
+}
+
+.arrow:active {
+  transform: scale(0.98);
+}
+
+.share p {
+  text-transform: uppercase;
+  color: var(--Grayish-Blue);
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem;
+  padding-right: 2rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  padding-right: 1.5rem;
+}
+
+a img:hover {
+  transform: scale(1.2);
+}
+
 .attribution {
   position: absolute;
   height: 1px;
